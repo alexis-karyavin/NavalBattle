@@ -8,10 +8,11 @@ public class GameField {
     public ArrayList<Ship> ships;
 
     public GameField() {
-        board = new Cell[10][10];
+        board = new Cell[10][];
         ships = new ArrayList<Ship>();
-        for (var i =0; i < 10; i++) {
-            for (var j = 0; i < 10; j++) {
+        for (var i = 0; i < board.length; i++) {
+            board[i] = new Cell[10];
+            for (var j = 0; j < board[i].length; j++) {
                 board[i][j] = new Cell(i, j);
             }
         }

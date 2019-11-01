@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3960b97-4c57-4c1d-b331-993d4ad821d0" name="Default Changelist" comment="" />
+    <list default="true" id="c3960b97-4c57-4c1d-b331-993d4ad821d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/NavalBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/NavalBattle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Ship.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +24,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ShmwDlS2eDCfr7NORuQ3beC99b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -60,5 +76,16 @@
       <updated>1572024438005</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
