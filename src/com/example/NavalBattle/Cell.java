@@ -12,7 +12,7 @@ package com.example.NavalBattle;
 public class Cell {
     public int x;
     public int y;
-    public int status;
+    private int status;
 
     public Cell(int x, int y) {
         this.x = x;
@@ -20,4 +20,11 @@ public class Cell {
         this.status = 0;
     }
 
+    public int getStatus() {
+        return this.status;
+    }
+
+    public void setStatus(int num) {
+        this.status = num;
+    }
 }
