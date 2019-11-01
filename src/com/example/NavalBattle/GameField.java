@@ -2,6 +2,7 @@ package com.example.NavalBattle;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class GameField {
     private Cell[][] board;
@@ -19,19 +20,23 @@ public class GameField {
     }
 
     public void addShip(int x1, int y1, int x2, int y2) { //Нужна проверка на выход из игрового поля!!
-        this.ships.add(new Ship(x1,y1,x2,y2));
+//        this.ships.add(new Ship(x1,y1,x2,y2));
+        List<Cell> cellsShip = new ArrayList<>();
         //Корабль в строку
         if(x1 == x2) {
             for (int i = y1; i <= y2; i++) {
                 this.board[x1][i].setStatus(1);
+                cellsShip.add(this.board[x1][i]);
             }
         }
         //Корабль в столбец
         else if (y1 == y2) {
             for (int i = x1; i <= x2; i++) {
                 this.board[i][y1].setStatus(1);
+                cellsShip.add(this.board[i][y1]);
             }
         }
+        this.ships.add(new Ship(cellsShip));
     }
 
     public String[][] getGameField() {
@@ -75,4 +80,10 @@ public class GameField {
     public Cell getCell(int x, int y) {
         return this.board[x][y];
     }
+
+//    private Ship getShip(int x, int y) {
+//        for (int i = 0; i < this.ships.size(); i++) {
+//
+//        }
+//    }
 }

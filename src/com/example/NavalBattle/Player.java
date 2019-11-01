@@ -106,6 +106,7 @@ public class Player {
         if(cell.getStatus() == 1) {
             //Добавить проверку на уничтожение корабля
             cell.setStatus(2);
+
         }
         // Если пусто, то промах
         else if (cell.getStatus() == 0) {
