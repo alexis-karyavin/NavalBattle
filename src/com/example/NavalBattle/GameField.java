@@ -4,7 +4,7 @@ package com.example.NavalBattle;
 import java.util.ArrayList;
 
 public class GameField {
-    public Cell[][] board;
+    private Cell[][] board;
     public ArrayList<Ship> ships;
 
     public GameField() {
@@ -52,5 +52,27 @@ public class GameField {
             }
         }
         return gameField;
+    }
+
+    public String[][] getHiddenGameField() {
+        String[][] gameField;
+        gameField = new String[this.board.length][];
+        for (var i = 0; i < this.board.length; i++) {
+            gameField[i] = new String[this.board[i].length];
+            for (var j = 0; j < this.board[i].length; j++) {
+                if (this.board[i][j].getStatus() == 2) {
+                    gameField[i][j] = "X";
+                } else if (this.board[i][j].getStatus() == 3) {
+                    gameField[i][j] = "*";
+                } else {
+                    gameField[i][j] = " ";
+                }
+            }
+        }
+        return gameField;
+    }
+
+    public Cell getCell(int x, int y) {
+        return this.board[x][y];
     }
 }

@@ -63,8 +63,53 @@ public class Player {
         System.out.println(" #----------# ");
     }
 
+    public void showHiddenEnemyGameField() {
+        /**
+         *
+         * id: Номер игрового поля
+         * 1 - Наше игровое поле
+         * 2 - Соперник
+         *
+         * return
+         *   0123456789
+         *  #----------#
+         *  0|          |
+         *  1|          |
+         *  2|          |
+         *  3|          |
+         *      .....
+         *  #----------#
+         */
+        String[][] gameField = new String[0][0];
+        gameField = this.enemyField.getHiddenGameField()                                        ;
+
+        System.out.println("  0123456789  ");
+        System.out.println(" #----------# ");
+        for (int i = 0; i < gameField.length; i++) {
+            System.out.print(i + "|");
+            for (int j = 0; j < gameField[i].length; j++) {
+                System.out.print(gameField[i][j]);
+            }
+            System.out.print("|\n");
+        }
+        System.out.println(" #----------# ");
+    }
+
     public void initGameFieldEnemy() {
         int coordinatesShips[][] = {{1,4,1,7}, {4,3,6,3}};
         this.addShips(coordinatesShips, 2);
+    }
+
+    public void shot(int x, int y) {
+        Cell cell = this.enemyField.getCell(x, y);
+        //Если попали, то подбита палуба
+        if(cell.getStatus() == 1) {
+            //Добавить проверку на уничтожение корабля
+            cell.setStatus(2);
+        }
+        // Если пусто, то промах
+        else if (cell.getStatus() == 0) {
+            cell.setStatus(3);
+        }
     }
 }

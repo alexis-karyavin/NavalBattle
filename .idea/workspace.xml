@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c3960b97-4c57-4c1d-b331-993d4ad821d0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Cell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/GameField.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/NavalBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/NavalBattle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Player.java" afterDir="false" />
     </list>
@@ -85,5 +86,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/example/NavalBattle/Player.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
