@@ -7,8 +7,13 @@ public class NavalBattle {
 
         int coordinatesShips[][] = {{0,0,2,0}, {5,0,5,2}};
 
-        pl.addShips(coordinatesShips);
+        //Добавляем корабли
+        pl.addShips(coordinatesShips, 1);
 
-        pl.showGameField();
+        //Доабвляем корабли сопернику
+        pl.initGameFieldEnemy();
+
+        System.out.println("Ваше игровое поле:");
+        pl.showGameField(1);
     }
 }

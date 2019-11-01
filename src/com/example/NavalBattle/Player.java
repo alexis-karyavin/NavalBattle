@@ -7,9 +7,10 @@ public class Player {
     public Player() {
         field = new GameField();
         enemyField = new GameField();
+        this.initGameFieldEnemy();
     }
 
-    public void addShips(int[][] coordinates) {
+    public void addShips(int[][] coordinates, int id) {
         for (var i = 0; i < coordinates.length; i++) {
             int x1, y1, x2, y2;
 
@@ -18,12 +19,20 @@ public class Player {
             x2 = coordinates[i][2];
             y2 = coordinates[i][3];
 
-            field.addShip(x1, y1, x2, y2);
+            if(id == 1) {
+                field.addShip(x1, y1, x2, y2);
+            } else if (id == 2) {
+                enemyField.addShip(x1, y1, x2, y2);
+            }
         }
     }
 
-    public void showGameField() {
+    public void showGameField(int id) {
         /**
+         *
+         * id: Номер игрового поля
+         * 1 - Наше игровое поле
+         * 2 - Соперник
          *
          * return
          *   0123456789
@@ -35,7 +44,13 @@ public class Player {
          *      .....
          *  #----------#
          */
-        String[][] gameField = this.field.getGameField();
+        String[][] gameField = new String[0][0];
+        if(id == 1) {
+            gameField = this.field.getGameField();
+        } else if (id == 2){
+            gameField = this.enemyField.getGameField();
+        }
+
         System.out.println("  0123456789  ");
         System.out.println(" #----------# ");
         for (int i = 0; i < gameField.length; i++) {
@@ -46,5 +61,10 @@ public class Player {
             System.out.print("|\n");
         }
         System.out.println(" #----------# ");
+    }
+
+    public void initGameFieldEnemy() {
+        int coordinatesShips[][] = {{1,4,1,7}, {4,3,6,3}};
+        this.addShips(coordinatesShips, 2);
     }
 }
