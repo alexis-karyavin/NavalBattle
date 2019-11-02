@@ -22,6 +22,7 @@ public class GameField {
     public void addShip(int x1, int y1, int x2, int y2) { //Нужна проверка на выход из игрового поля!!
 //        this.ships.add(new Ship(x1,y1,x2,y2));
         List<Cell> cellsShip = new ArrayList<>();
+
         //Корабль в строку
         if(x1 == x2) {
             for (int i = y1; i <= y2; i++) {
@@ -79,6 +80,15 @@ public class GameField {
 
     public Cell getCell(int x, int y) {
         return this.board[x][y];
+    }
+
+    public void checkShips() {
+        for (int i = 0; i < this.ships.size(); i++) {
+            Ship ship = this.ships.get(i);
+            if (ship.isDestroyed()) {
+                this.ships.remove(i);
+            }
+        }
     }
 
 //    private Ship getShip(int x, int y) {

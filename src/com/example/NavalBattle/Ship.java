@@ -26,11 +26,20 @@ public class Ship {
     }
 
     //Уничтожен ли корабль
-//    private boolean isDestroyed () {
-//        for (int i = 0; i < this.cells.length; i++) {
-//            if (this.cells[i].getStatus() == 2
-//        }
-//    }
+    public boolean isDestroyed () {
+        int hot = 0;
+        for (int i = 0; i < this.cells.size(); i++) {
+            Cell cell = this.cells.get(i);
+            if (cell.getStatus() == 2) {
+                hot++;
+            }
+        }
+        if (hot == this.cells.size()) {
+            this.status = 3;
+            return true;
+        }
+        return false;
+    }
 
 //    public Ship(int x1, int y1, int x2, int y2) {
 //        this.x1 = x1;

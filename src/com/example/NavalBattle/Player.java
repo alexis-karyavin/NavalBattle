@@ -3,6 +3,7 @@ package com.example.NavalBattle;
 public class Player {
     public GameField field;
     public GameField enemyField;
+    private boolean work = true;
 
     public Player() {
         field = new GameField();
@@ -100,13 +101,17 @@ public class Player {
         this.addShips(coordinatesShips, 2);
     }
 
+    public boolean isContinue() {
+        return this.work;
+    }
+
     public void shot(int x, int y) {
         Cell cell = this.enemyField.getCell(x, y);
         //Если попали, то подбита палуба
         if(cell.getStatus() == 1) {
             //Добавить проверку на уничтожение корабля
             cell.setStatus(2);
-
+            this.enemyField.checkShips();
         }
         // Если пусто, то промах
         else if (cell.getStatus() == 0) {
