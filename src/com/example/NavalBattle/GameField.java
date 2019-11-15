@@ -2,7 +2,9 @@ package com.example.NavalBattle;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class GameField {
     private Cell[][] board;
@@ -86,14 +88,56 @@ public class GameField {
         for (int i = 0; i < this.ships.size(); i++) {
             Ship ship = this.ships.get(i);
             if (ship.isDestroyed()) {
+                //В поля, которые вокруг корабля, вставляем промахи
+                List<Cell> cells = ship.getCells();
+                ArrayList<ArrayList<Integer>> arrMisses = initArrMisses(ship);
+                for (ArrayList<Integer> list : arrMisses) {
+                    // 0: x, 1: y
+                    int x = list.get(0);
+                    int y = list.get(1);
+                    this.board[x][y].setStatus(3);
+                }
+                //Удаляем корабля из листа
                 this.ships.remove(i);
             }
         }
     }
 
-//    private Ship getShip(int x, int y) {
-//        for (int i = 0; i < this.ships.size(); i++) {
-//
-//        }
-//    }
+    private ArrayList<ArrayList<Integer>> initArrMisses(Ship ship) {
+        ArrayList<ArrayList<Integer>> arrMisses = new  ArrayList<ArrayList<Integer>>();
+
+        List<Cell> cells = ship.getCells();
+        ArrayList<Integer> tmp = new ArrayList<>();
+        if(ship.getType() == 1) {
+            addPointsToList(arrMisses, cells.get(0).x, cells.get(0).y - 1);
+            addPointsToList(arrMisses, cells.get(0).x, cells.get(cells.size() - 1).y + 1);
+
+            for (int i = 0; i < cells.size(); i++) {
+                addPointsToList(arrMisses, cells.get(i).x - 1, cells.get(i).y);
+                addPointsToList(arrMisses, cells.get(i).x + 1, cells.get(i).y);
+            }
+        } else if (ship.getType() == 2) {
+            addPointsToList(arrMisses, cells.get(0).x - 1, cells.get(0).y);
+            addPointsToList(arrMisses, cells.get(cells.size() - 1).x + 1, cells.get(0).y);
+
+            for (int i = 0; i < cells.size(); i++) {
+                addPointsToList(arrMisses, cells.get(i).x, cells.get(i).y - 1);
+                addPointsToList(arrMisses, cells.get(i).x, cells.get(i).y + 1);
+            }
+        } else if (ship.getType() == 3) {
+            addPointsToList(arrMisses, cells.get(0).x + 1, cells.get(0).y);
+            addPointsToList(arrMisses, cells.get(0).x - 1, cells.get(0).y);
+            addPointsToList(arrMisses, cells.get(0).x, cells.get(0).y + 1);
+            addPointsToList(arrMisses, cells.get(0).x, cells.get(0).y - 1);
+        }
+
+        return arrMisses;
+    }
+
+    private void addPointsToList( ArrayList<ArrayList<Integer>> list, int x, int y) {
+        ArrayList<Integer> tmp = new ArrayList<>();
+        tmp.add(x);
+        tmp.add(y);
+        list.add(tmp);
+    }
 }
