@@ -89,7 +89,6 @@ public class GameField {
             Ship ship = this.ships.get(i);
             if (ship.isDestroyed()) {
                 //В поля, которые вокруг корабля, вставляем промахи
-                List<Cell> cells = ship.getCells();
                 ArrayList<ArrayList<Integer>> arrMisses = initArrMisses(ship);
                 for (ArrayList<Integer> list : arrMisses) {
                     // 0: x, 1: y
@@ -105,9 +104,7 @@ public class GameField {
 
     private ArrayList<ArrayList<Integer>> initArrMisses(Ship ship) {
         ArrayList<ArrayList<Integer>> arrMisses = new  ArrayList<ArrayList<Integer>>();
-
         List<Cell> cells = ship.getCells();
-        ArrayList<Integer> tmp = new ArrayList<>();
         if(ship.getType() == 1) {
             addPointsToList(arrMisses, cells.get(0).x, cells.get(0).y - 1);
             addPointsToList(arrMisses, cells.get(0).x, cells.get(cells.size() - 1).y + 1);

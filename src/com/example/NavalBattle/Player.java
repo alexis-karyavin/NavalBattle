@@ -97,15 +97,18 @@ public class Player {
     }
 
     public void initGameFieldEnemy() {
-        int coordinatesShips[][] = {{1,4,1,7}, {4,3,6,3}};
+        int coordinatesShips[][] = {{1,4,1,7}, {4,3,6,3}, {5,7, 5,7}};
         this.addShips(coordinatesShips, 2);
     }
 
     public boolean isContinue() {
-        return this.work;
+        if (this.enemyField.ships.size() == 0 || this.field.ships.size() == 0 ) {
+            return false;
+        }
+        return true;
     }
 
-    public void shot(int x, int y) {
+    public int shot(int x, int y) {
         Cell cell = this.enemyField.getCell(x, y);
         //Если попали, то подбита палуба
         if(cell.getStatus() == 1) {
@@ -117,5 +120,7 @@ public class Player {
         else if (cell.getStatus() == 0) {
             cell.setStatus(3);
         }
+
+        return cell.getStatus();
     }
 }

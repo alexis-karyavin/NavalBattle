@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3960b97-4c57-4c1d-b331-993d4ad821d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/FrameNavalBattle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NavalBattle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NavalBattle.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/META-INF/NavalBattle.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/GameField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/NavalBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/NavalBattle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Ship.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +47,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="NavalBattle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.NavalBattle.NavalBattle" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.NavalBattle.Main" />
       <module name="NavalBattle" />
       <extension name="coverage">
         <pattern>
@@ -64,7 +62,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NavalBattle" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -95,6 +93,20 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/example/NavalBattle/Player.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="x" />
