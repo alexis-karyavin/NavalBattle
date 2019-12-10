@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3960b97-4c57-4c1d-b331-993d4ad821d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Cell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/CellButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/CustomLabel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/FrameNavalBattle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/GameField.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/PanelGrid$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/PanelGrid.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Ship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/CellButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/CellButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/CustomLabel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/CustomLabel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/FrameNavalBattle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/FrameNavalBattle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/PanelGrid$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/PanelGrid$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/PanelGrid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/PanelGrid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/FrameNavalBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/FrameNavalBattle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Main.java" afterDir="false" />
@@ -117,6 +114,46 @@
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="693" y="300" width="526" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1576011872739" />
+    <state width="537" height="466" key="DebuggerActiveHint" timestamp="1576016835901">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="537" height="466" key="DebuggerActiveHint/0.24.1920.1056@0.24.1920.1056" timestamp="1576016835901" />
+    <state width="1866" height="275" key="GridCell.Tab.0.bottom" timestamp="1576018026044">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1866" height="275" key="GridCell.Tab.0.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1576018026044" />
+    <state width="1866" height="275" key="GridCell.Tab.0.center" timestamp="1576018026042">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1866" height="275" key="GridCell.Tab.0.center/0.24.1920.1056@0.24.1920.1056" timestamp="1576018026042" />
+    <state width="1866" height="275" key="GridCell.Tab.0.left" timestamp="1576018026041">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1866" height="275" key="GridCell.Tab.0.left/0.24.1920.1056@0.24.1920.1056" timestamp="1576018026041" />
+    <state width="1866" height="275" key="GridCell.Tab.0.right" timestamp="1576018026043">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1866" height="275" key="GridCell.Tab.0.right/0.24.1920.1056@0.24.1920.1056" timestamp="1576018026043" />
+    <state width="1866" height="225" key="GridCell.Tab.1.bottom" timestamp="1576016925801">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1866" height="225" key="GridCell.Tab.1.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1576016925801" />
+    <state width="1866" height="225" key="GridCell.Tab.1.center" timestamp="1576016925799">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1866" height="225" key="GridCell.Tab.1.center/0.24.1920.1056@0.24.1920.1056" timestamp="1576016925799" />
+    <state width="1866" height="225" key="GridCell.Tab.1.left" timestamp="1576016925798">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1866" height="225" key="GridCell.Tab.1.left/0.24.1920.1056@0.24.1920.1056" timestamp="1576016925798" />
+    <state width="1866" height="225" key="GridCell.Tab.1.right" timestamp="1576016925800">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1866" height="225" key="GridCell.Tab.1.right/0.24.1920.1056@0.24.1920.1056" timestamp="1576016925800" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576015618242">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.24.1920.1056@0.24.1920.1056" timestamp="1576015618242" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

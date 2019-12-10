@@ -11,7 +11,7 @@ import java.util.Calendar;
 
 public class FrameNavalBattle extends JFrame {
 
-        public FrameNavalBattle(NavalBattle battle) {
+        public FrameNavalBattle(Controller controller) {
             Container contentPanel = getContentPane();
 
             setLayout(new GridLayout(0, 2, 10, 10));
@@ -22,11 +22,11 @@ public class FrameNavalBattle extends JFrame {
             PanelGrid gridLeft = new PanelGrid();
             PanelGrid gridRight = new PanelGrid();
 
-            String[][] gameFieldPlayerString = battle.getFieldPlayerString();
-            String[][] gameFieldEnemyString = battle.getFieldEnemyString();
+//            String[][] gameFieldPlayerString = controller.onGetFieldPlayerString();
+//            String[][] gameFieldEnemyString = controller.onGetFieldEnemyString();
 
-            gridLeft.initPanelPlayer(gameFieldPlayerString);
-            gridRight.initPanelEnemy(battle, gameFieldEnemyString);
+            gridLeft.initPanelPlayer(controller);
+            gridRight.initPanelEnemy(controller);
 
             contentPanel.add(gridLeft);
             contentPanel.add(gridRight);
@@ -42,7 +42,7 @@ class PanelGrid extends JPanel {
         listButtons = new ArrayList<>();
     }
 
-    public void initPanelPlayer(String[][] field) {
+    public void initPanelPlayer(Controller controller) {
         setLayout(new GridLayout(0, 11));
         add(new JLabel(" "));
         //Вставляем тайтлы сеток игрового поля
@@ -51,6 +51,8 @@ class PanelGrid extends JPanel {
             label.removeBorder();
             add(label);
         }
+
+        String[][] field = controller.onGetFieldPlayerString();
 
         //Заполняем поле кнопками
         for (int i = 0; i <= 10; i++) {
@@ -81,7 +83,7 @@ class PanelGrid extends JPanel {
         return null;
     }
 
-    public void initPanelEnemy(NavalBattle battle, String[][] field) {
+    public void initPanelEnemy(Controller controller) {
         setLayout(new GridLayout(0, 11));
         add(new JLabel(" "));
         //Вставляем тайтл сетки игрового поля
@@ -103,10 +105,8 @@ class PanelGrid extends JPanel {
                     btn.addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            int status = battle.shoot(btn.x, btn.y);
-                            String[][] gameFieldString = battle.getFieldEnemyString();
-
-//                            System.out.printf("%d%d", btn.x, btn.y);
+                            int status = controller.onShoot(btn.x, btn.y);
+                            String[][] gameFieldString = controller.onGetFieldEnemyString();
 
                             for (int k = 0; k < gameFieldString.length; k++) {
                                 for (int l = 0; l < gameFieldString[k].length; l++) {
@@ -121,20 +121,12 @@ class PanelGrid extends JPanel {
 
                                 }
                             }
-                            if(!battle.isContinue()) {
+                            if(!controller.onIsContinue()) {
                                for (CellButton btn : listButtons) {
                                    btn.setEnabled(false);
                                }
                             }
                         }
-
-//                            if (status == 2) {
-//                               btn.setText("X");
-//                           } else if (status == 3) {
-//                               btn.setText("*");
-//                           }
-//                            btn.setEnabled(false);
-//                        }
                     });
                 }
             }
