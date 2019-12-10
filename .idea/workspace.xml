@@ -2,21 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3960b97-4c57-4c1d-b331-993d4ad821d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/FrameNavalBattle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/GameField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/GameField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Cell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/CellButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/CustomLabel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/FrameNavalBattle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/GameField.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/NavalBattle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/PanelGrid$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/PanelGrid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/NavalBattle/com/example/NavalBattle/Ship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/FrameNavalBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/FrameNavalBattle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/NavalBattle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/NavalBattle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/NavalBattle/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/NavalBattle/Player.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="NavalBattle" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,21 +41,18 @@
   </component>
   <component name="ProjectId" id="1ShmwDlS2eDCfr7NORuQ3beC99b" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebServer" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -52,7 +60,7 @@
       <module name="NavalBattle" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.NavalBattle.*" />
+          <option name="PATTERN" value="Models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,6 +73,18 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -92,21 +112,13 @@
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="693" y="300" width="526" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576011872739">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="693" y="300" width="526" height="508" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1576011872739" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/example/NavalBattle/Player.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/example/NavalBattle/GameField.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="x" />

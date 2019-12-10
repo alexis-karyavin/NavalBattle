@@ -106,7 +106,7 @@ class PanelGrid extends JPanel {
                             int status = battle.shoot(btn.x, btn.y);
                             String[][] gameFieldString = battle.getFieldEnemyString();
 
-                            System.out.printf("%d%d", btn.x, btn.y);
+//                            System.out.printf("%d%d", btn.x, btn.y);
 
                             for (int k = 0; k < gameFieldString.length; k++) {
                                 for (int l = 0; l < gameFieldString[k].length; l++) {

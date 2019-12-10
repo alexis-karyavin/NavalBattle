@@ -28,76 +28,8 @@ public class Player {
         }
     }
 
-    public void showGameField(int id) {
-        /**
-         *
-         * id: Номер игрового поля
-         * 1 - Наше игровое поле
-         * 2 - Соперник
-         *
-         * return
-         *   0123456789
-         *  #----------#
-         *  0|          |
-         *  1|          |
-         *  2|          |
-         *  3|          |
-         *      .....
-         *  #----------#
-         */
-        String[][] gameField = new String[0][0];
-        if(id == 1) {
-            gameField = this.field.getGameField();
-        } else if (id == 2){
-            gameField = this.enemyField.getGameField();
-        }
-
-        System.out.println("  0123456789  ");
-        System.out.println(" #----------# ");
-        for (int i = 0; i < gameField.length; i++) {
-            System.out.print(i + "|");
-            for (int j = 0; j < gameField[i].length; j++) {
-                System.out.print(gameField[i][j]);
-            }
-            System.out.print("|\n");
-        }
-        System.out.println(" #----------# ");
-    }
-
-    public void showHiddenEnemyGameField() {
-        /**
-         *
-         * id: Номер игрового поля
-         * 1 - Наше игровое поле
-         * 2 - Соперник
-         *
-         * return
-         *   0123456789
-         *  #----------#
-         *  0|          |
-         *  1|          |
-         *  2|          |
-         *  3|          |
-         *      .....
-         *  #----------#
-         */
-        String[][] gameField = new String[0][0];
-        gameField = this.enemyField.getHiddenGameField()                                        ;
-
-        System.out.println("  0123456789  ");
-        System.out.println(" #----------# ");
-        for (int i = 0; i < gameField.length; i++) {
-            System.out.print(i + "|");
-            for (int j = 0; j < gameField[i].length; j++) {
-                System.out.print(gameField[i][j]);
-            }
-            System.out.print("|\n");
-        }
-        System.out.println(" #----------# ");
-    }
-
     public void initGameFieldEnemy() {
-        int coordinatesShips[][] = {{1,4,1,7}, {4,3,6,3}, {5,7, 5,7}};
+        int[][] coordinatesShips = {{1,4,1,7}, {4,3,6,3}, {5,7, 5,7}};
         this.addShips(coordinatesShips, 2);
     }
 
@@ -108,7 +40,7 @@ public class Player {
         return true;
     }
 
-    public int shot(int x, int y) {
+    public int shoot(int x, int y) {
         Cell cell = this.enemyField.getCell(x, y);
         //Если попали, то подбита палуба
         if(cell.getStatus() == 1) {
@@ -120,7 +52,6 @@ public class Player {
         else if (cell.getStatus() == 0) {
             cell.setStatus(3);
         }
-
         return cell.getStatus();
     }
 }
